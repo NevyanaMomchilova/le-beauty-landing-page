@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Icon" transform="translate(0.5 0.5)">
+    <path d="M0 3.44667L0.666667 3.44667C1.956 3.44667 3 2.73533 3 1.44667L3 0" transform="translate(10.335449 10.553223)" id="Shape" fill="none" fill-rule="evenodd" stroke="#FAB91C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 1.3544e-06C1.29941 -0.000918604 2.4103 0.934871 2.63012 2.21555C2.84994 3.49623 2.11468 4.7489 0.889333 5.18133C0.685324 5.25363 0.458917 5.22238 0.282115 5.09753C0.105313 4.97268 0.000124023 4.76977 2.36848e-15 4.55333L0 1.3544e-06Z" transform="translate(12.668701 5.333496)" id="Shape" fill="none" fill-rule="evenodd" stroke="#FAB91C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M2.66881 1.3544e-06C1.3694 -0.000918604 0.258503 0.934871 0.0386848 2.21555C-0.181134 3.49623 0.554129 4.7489 1.77947 5.18133C1.98348 5.25363 2.20989 5.22238 2.38669 5.09753C2.56349 4.97268 2.66868 4.76977 2.66881 4.55333L2.66881 1.3544e-06Z" transform="translate(0 5.333496)" id="Shape" fill="none" fill-rule="evenodd" stroke="#FAB91C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M10 6.33333L10 5C10 2.23858 7.76142 1.4803e-16 5 0C2.23858 -1.4803e-16 5.92119e-16 2.23858 0 5L0 6.33333" transform="translate(2.6687012 0)" id="Shape" fill="none" fill-rule="evenodd" stroke="#FAB91C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0.666667 0L3.33333 0C3.51743 0 3.66667 0.149238 3.66667 0.333333L3.66667 1C3.66667 1.18409 3.51743 1.33333 3.33333 1.33333L0.666667 1.33333C0.298477 1.33333 0 1.03486 0 0.666667L0 0.666667C0 0.298477 0.298477 0 0.666667 0Z" transform="translate(6.668701 13.333496)" id="Shape" fill="none" fill-rule="evenodd" stroke="#FAB91C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

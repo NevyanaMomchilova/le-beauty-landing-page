@@ -1,0 +1,183 @@
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif; */
+
+/* ===========================================
+Table of Content:
+    1.GLOBAL 
+        1.1.Body Size, paddings
+        1.2.Font Colors
+        1.3.Typography
+        1.4.Z-Index
+    2.HERO SECTION and NAVIGATION
+        2.1.Hero-Navigation
+        2.2.Hero-Information and Image
+        2.3.Hero-Form
+*/
+
+
+/* ===========================================
+1.GLOBAL 
+*/
+/* 1.1.Body Size, paddings */
+body {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.hero-navigation,
+.hero-info,
+.hero-form {
+    padding: 0 13.5rem;
+}
+
+/* 1.2.Font Colors */
+/* h1 */
+.hero-title {
+    color: #0f1c49;
+}
+
+/* p */
+.hero-logo p {
+    color: #0f1c49;
+}
+
+.hero-text {
+    color: #878da4;
+}
+
+/* a */
+.hero-menu-link {
+    color: #878da4;
+}
+
+.hero-menu-link:hover {
+    color: #0f1c49;
+}
+
+.btn {
+    color: #fab91c;
+}
+
+/* legend */
+.hero-form-title {
+    color: #0f1c49;
+}
+
+/* form */
+.hero-form select {
+    color: #0f1c49;
+}
+
+.hero-form input {
+    color: #878da4;
+}
+
+.hero-form input[type="submit"] {
+    color: #ffffff;
+}
+
+/* 1.3.Typography */
+/*
+--> coded in reset-mini.css:
+Main font family - Rubik,
+Main font-size: 62.5% -> 10px=1rem,
+Main font weight: 400,
+Main line-height: 1.5;
+*/
+/* h1 */
+.hero-title {
+    font-family: "Roboto Slab";
+    font-size: 5.6rem;
+    font-weight: 300;
+}
+
+/* p */
+.hero-logo p {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.hero-text {
+    font-size: 1.6rem;
+}
+
+/* a */
+.hero-menu-link {
+    font-size: 1.6rem;
+}
+
+.hero-menu-btn {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* legend */
+.hero-form-title {
+    font-family: "Roboto Slab";
+    font-size: 3.2rem;
+    font-weight: 400
+}
+
+/* form */
+.hero-form select {
+    font-size: 1.6rem;
+}
+
+.hero-form input {
+    font-size: 16px;
+}
+
+.hero-form input[type="submit"] {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 1.4.Z-Index */
+
+
+
+/* ===========================================
+1.HERO SECTION and NAVIGATION 
+*/
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2.1.Hero-Navigation */
+.hero-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hero-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2.2.Hero-Information */
+.hero-menu-btn {
+    border-radius: 4px;
+    border: solid 1px #fab91c;
+}
+
+/* 2.3.Hero-Form */
+.hero-form input[type="submit"] {
+    border-radius: 4px;
+    background-color: #fab91c;
+}
+
+/* Довърши глобалното инфо - направено е само за hero секцията
+Довърши hero секцията */
