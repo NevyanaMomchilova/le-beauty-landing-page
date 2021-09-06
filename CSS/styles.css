@@ -8,72 +8,97 @@ Table of Content:
         1.2.Font Colors
         1.3.Typography
         1.4.Z-Index
-    2.HERO SECTION and NAVIGATION
-        2.1.Hero-Navigation
-        2.2.Hero-Information and Image
-        2.3.Hero-Form
+        1.5.Layout
+    2.HERO
+    3.ABOUT
+    4.SERVICES
+    5.GALLERIES
+    6.TESTIMONIAL
+    7.NEWS
+    8.FOOTER
 */
 
 
 /* ===========================================
 1.GLOBAL 
 */
-/* 1.1.Body Size, paddings */
+/* 1.1.Body Size, main paddings and margins */
 body {
     max-width: 144rem;
     margin: 0 auto;
 }
 
-.hero-navigation,
-.hero-info,
-.hero-form {
+header,
+.hero {
     padding: 0 13.5rem;
 }
 
+.hero {
+    padding-top: 12rem;
+}
+
+.hero-info {
+    padding-bottom: 100rem;
+}
+
+.about {
+    padding: 10rem 15rem 12rem 20rem;
+}
+
+.galleries {
+    margin: 13rem 14rem 12rem 0;
+}
+
+.testimonial {
+    margin: 0 13rem;
+} 
+
+.news {
+    padding: 7rem 13rem 20rem 13rem;
+}
+
+footer {
+    padding: 0 13rem 8rem 13rem;
+}
+
 /* 1.2.Font Colors */
-/* h1 */
-.hero-title {
+.title,
+.logo p,
+option,
+.service,
+.testimonial-text,
+.news-item-text,
+address p {
     color: #0f1c49;
 }
 
-/* p */
-.hero-logo p {
-    color: #0f1c49;
-}
-
-.hero-text {
+p,
+input,
+.news-item-category,
+.footer-link {
     color: #878da4;
 }
 
-/* a */
-.hero-menu-link {
-    color: #878da4;
-}
-
-.hero-menu-link:hover {
-    color: #0f1c49;
-}
-
+/* ------ Buttons */
+/* font-size for EM units is set on class .btn in 1.3.Typography */
 .btn {
     color: #fab91c;
+    text-decoration: underline;
 }
 
-/* legend */
-.hero-form-title {
-    color: #0f1c49;
+.header-btn {
+    text-decoration: none;
+    padding: 1.1em 2.7em;
+    border-radius: 0.28em;
+    border: solid 0.07rem #fab91c;
 }
 
-/* form */
-.hero-form select {
-    color: #0f1c49;
-}
-
-.hero-form input {
-    color: #878da4;
-}
-
-.hero-form input[type="submit"] {
+.hero-form-btn {
+    text-decoration: none;
     color: #ffffff;
+    padding: 1.1em 9.64em;
+    border-radius: 0.28em;
+    background-color: #fab91c;
 }
 
 /* 1.3.Typography */
@@ -82,102 +107,377 @@ body {
 Main font family - Rubik,
 Main font-size: 62.5% -> 10px=1rem,
 Main font weight: 400,
-Main line-height: 1.5;
+Main line-height: 2.8rem;
 */
-/* h1 */
-.hero-title {
+.title,
+.testimonial-author,
+.testimonial-text {
     font-family: "Roboto Slab";
-    font-size: 5.6rem;
-    font-weight: 300;
 }
 
-/* p */
-.hero-logo p {
+.footer-quick-link-title {
+    font-family: 'Rubik', sans-serif; 
+}
+
+.title {
+    font-size: 4.8rem;
+    font-weight: 300;
+    line-height: 6.7rem;
+}
+
+.hero-title {
+    font-size: 5.6rem;
+    line-height: 7.2rem;
+}
+
+.hero-form-title {
+    font-size: 3.2rem;
+}
+
+p,
+option,
+input,
+.footer-link {
+    font-size: 1.6rem;
+}
+
+.logo p,
+.service,
+.testimonial-text {
     font-size: 2.4rem;
     font-weight: 500;
 }
 
-.hero-text {
-    font-size: 1.6rem;
+.testimonial-text {
+    line-height: 3.8rem;
+    font-weight: 300;
 }
 
-/* a */
-.hero-menu-link {
-    font-size: 1.6rem;
-}
-
-.hero-menu-btn {
+.btn {
     font-size: 1.4rem;
     font-weight: 500;
 }
 
-/* legend */
-.hero-form-title {
-    font-family: "Roboto Slab";
-    font-size: 3.2rem;
-    font-weight: 400
+.news-item-category {
+    font-size: 1.4rem;
 }
 
-/* form */
-.hero-form select {
-    font-size: 1.6rem;
+.news-item-text,
+.footer-quick-link-title,
+.footer-department-title {
+    font-size: 2rem;
+    font-weight: 500
+}
+.news-item-text {
+    line-height: 3.2rem;
 }
 
-.hero-form input {
-    font-size: 16px;
+address {
+    font-style: normal;
 }
 
-.hero-form input[type="submit"] {
-    font-size: 14px;
-    font-weight: 500;
+.footer-link {
+    line-height: 3.5rem;
 }
 
 /* 1.4.Z-Index */
+.hero-form,
+.services-information,
+.galleries-title,
+.galleries-images,
+.testimonial-information {
+    z-index: 1;
+}
+
+/* 1.5.Layout */
+.flex-row-spacebtw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* ===========================================
+3.HERO
+*/
+header {
+    width: 100%;
+    height: 10.4rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo p {
+    padding-left: 2rem;
+}
+
+.hero {
+    align-items: flex-start;
+    position: relative;
+}
+
+.hero-title {
+    padding-bottom: 2.4rem;
+}
+
+.hero-info {
+    max-width: 40rem;
+}
+
+.hero-form {
+    position: relative;
+    width: 50rem;
+    height: 74.5rem;
+    padding: 4rem;
+    border-radius: 10rem 1rem 1rem 1rem;
+    border: solid 0.1rem #eeeeee;
+    background: #ffffff;
+    box-shadow: 0px 30px 60px rgba(0,0,0,0.06);
+}
+
+select,
+input {
+    width: 100%;
+    height: 5.6rem;
+    border-radius: 0.4rem;
+    border: solid 0.1rem #eeeeee;
+    margin-bottom: 1.6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+}
+
+select {
+    cursor: pointer;
+    height: 6.2rem;
+    appearance: none;
+    background-image: url(../images/select-arrow.png);
+    background-repeat: no-repeat;
+    /* 39 rem from the left on the X coordinate  */
+    background-position: 39rem;
+    background-size: 1rem;
+}
+
+input[type="textarea"] {
+    height: 14rem;
+    padding-bottom: 10rem;
+}
+
+.hero-form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.hero-form-title {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* remove the default calendar icon from the date type input form field*/
+.hero-form-date-input::-webkit-inner-spin-button,
+.hero-form-date-input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.hero-form-btn {
+    cursor: pointer;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 42rem;
+    left: 0;
+    /* width: 100%;
+    height: 80rem; */
+}
+
+
+/* ===========================================
+4.ABOUT
+*/
+.about {
+    position: relative;
+}
+
+.about-img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-info {
+    max-width: 38.5rem;
+}
+
+.about-text-first {
+    padding: 6.5rem 0 5rem 0;
+}
+
+.about-text-second {
+    padding-bottom: 8rem;
+}
+
+
+/* ===========================================
+5.SERVICES
+*/
+.services {
+    position: relative;
+}
+
+.services-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.services-information {
+    position: relative;
+    max-width: 62rem;
+    padding: 23rem 0 0 23rem;
+}
+
+.services-text {
+    padding: 7rem 0 11rem 0;
+}
+
+
+/* ===========================================
+6.GALLERIES
+*/
+.galleries {
+    position: relative;
+}
+
+.galleries-img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.galleries-title,
+.galleries-images {
+    position: relative;
+}
+
+.galleries-title {
+    margin-bottom: 9.4rem;
+    text-align: right;
+}
+
+.galleries-images {
+    margin-left: 7rem;
+    gap: 2rem;
+}
+
+
+/* ===========================================
+7.TESTIMONIAL
+*/
+
+.testimonial {
+    position: relative;
+} 
+
+.testimonial-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonial-information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 84rem;
+    padding: 10rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-author {
+    padding: 8rem 0 3rem 0;
+}
+
+
+/* ===========================================
+8.NEWS
+*/
+
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 9rem;
+}
+
+.news-items {
+    gap: 2.8rem;
+}
+
+.news-item {
+    position: relative;
+}
+
+.news-item-information {
+    position: absolute;
+    top: 33.4rem;
+    left: 6.5rem;
+    max-width: 19rem;
+}
+
+.news-item-text {
+    padding-top: 1rem;
+}
 
 
 
 /* ===========================================
-1.HERO SECTION and NAVIGATION 
+9.FOOTER
 */
-.hero {
+footer.flex-row-spacebtw {
+    align-items: flex-start;
+}
+
+.footer-left {
+    max-width: 37rem;
+}
+
+.footer-text {
+    padding: 5rem 0 3rem 0;
+}
+
+.address-field {
     display: flex;
-    flex-direction: column;
 }
 
-/* 2.1.Hero-Navigation */
-.hero-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.address-field img {
+    padding-right: 1rem;
+    padding-bottom: 2rem;
 }
 
-.hero-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-right {
+    max-width: 38.5rem;
 }
 
-.hamburger {
-    display: none;
+.footer-quick-link {
+    padding-right: 15.5rem;
 }
 
-.hero-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-quick-link-title,
+.footer-department-title {
+    padding-bottom: 2rem;
 }
 
-/* 2.2.Hero-Information */
-.hero-menu-btn {
-    border-radius: 4px;
-    border: solid 1px #fab91c;
-}
 
-/* 2.3.Hero-Form */
-.hero-form input[type="submit"] {
-    border-radius: 4px;
-    background-color: #fab91c;
-}
-
-/* Довърши глобалното инфо - направено е само за hero секцията
-Довърши hero секцията */

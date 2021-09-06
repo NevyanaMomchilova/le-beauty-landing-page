@@ -14,7 +14,7 @@ html {
     font-family: 'Rubik', sans-serif;
     /* 62.5% of font-size = 10px if browser font is set to 16px, which makes 1rem = 10px */
     font-size: 62.5%;
-    line-height: 1.5;
+    line-height: 2.8rem;
     font-weight: 400;
     scroll-behavior: smooth;
 }
