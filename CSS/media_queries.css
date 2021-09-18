@@ -52,7 +52,8 @@ Table of Content:
     header,
     .hero,
     .about,
-    .galleries {
+    .galleries,
+    .news {
         padding-left: 4%;
         padding-right: 4%;
     }
@@ -84,6 +85,16 @@ Table of Content:
 
     .services-text {
         padding: 2em 0 1.5em 0;
+    }
+
+    .news {
+        margin-top: 4%;
+    }
+
+    .news-item-information {
+        top: 64%;
+        left: 15%;
+        max-width: 15rem;
     }
 }
 
@@ -162,6 +173,21 @@ Table of Content:
         padding: 1em 0 0.8em 0;
     }
 
+    .news-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news-item {
+        max-width: 28rem;
+        margin-bottom: 4%;
+    }
+
+    .news-item-text {
+        font-size: clamp(1.5rem, 1.3684rem + 0.4386vw, 2rem);
+    }
+
 }
 
 /* 500px
@@ -202,6 +228,8 @@ Table of Content:
     .testimonial-avatar {
         display: none;
     }
+
+    
 }
 
 
