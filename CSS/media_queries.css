@@ -1,32 +1,82 @@
 /*  */
 /* MEDIA QUERIES */
-/* 1450px
----------------------------------------------- */
-@media screen and (max-width: 1450px) {
-    
-}
+/* ===========================================
+Table of Content:
+    - 1250px
+    - 1050px
+    - 700px
+    - 500px
+*/
 
 
 /* 1250px
 ---------------------------------------------- */
-    @media screen and (max-width: 1250px) {
-        .hero-form {
-            max-width: 45rem;
-            max-height: 68rem;
-            padding: 1.6em;
-        }
+@media screen and (max-width: 1250px) {
+    .hero-form {
+        max-width: 45rem;
+        max-height: 68rem;
+        padding: 1.6em;
+    }
 
-        select,
-        input {
-            margin-bottom: 0.5em;
-            padding-top: 0.8em;
-            padding-bottom: 0.8em;
-            padding-left: 1.1em;
-        }
+    select,
+    input {
+        margin-bottom: 0.5em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        padding-left: 1.1em;
+    }
 
-        input[type="textarea"] {
-            padding-bottom: 4em;
-        }
+    input[type="textarea"] {
+        padding-bottom: 4em;
+    }
+
+    .about,
+    .galleries {
+        padding-left: 9.4%;
+        padding-right: 9.4%;
+    }
+
+    .galleries-images {
+        padding-left: 0;
+    }
+}
+
+
+/* 1050px
+---------------------------------------------- */
+@media screen and (max-width: 1050px) {
+    header,
+    .hero,
+    .about,
+    .galleries {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .hero-info {
+        padding-bottom: 78%;
+    }
+
+    .hero-bg {
+        top: 30rem;
+    }
+    
+    .about-text-first {
+        padding: 2.5em 0 1.5em 0;
+    }
+    
+    .about-text-second {
+        padding-bottom: 2em;
+    }
+
+    .services-information {
+        max-width: 40%;
+        padding: 13% 0 0 4%;
+    }
+
+    .services-text {
+        padding: 2em 0 1.5em 0;
+    }
 }
 
 
@@ -34,7 +84,7 @@
 ---------------------------------------------- */
 @media screen and (max-width: 700px) {
     .logo p {
-        padding-left: 0.5em;
+        padding-left: 0.3em;
     }
 
     .hero {
@@ -43,6 +93,7 @@
     }
 
     .hero-info {
+        min-width: 25rem;
         padding-bottom: 10%;
     }
 
@@ -50,12 +101,40 @@
         top: 25rem;
     }
 
-    .galleries {
-        margin: 8% 3%;
+    .about {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8.3%;
+        padding-top: 5%;
     }
 
-    .galleries-images {
-        margin-left: 0;
+    .about-img {
+        max-width: 32rem;
+        margin-bottom: 7%;
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-img {
+        position: relative;
+    }
+
+    .services-information {
+        max-width: 43.3rem;
+        padding: 4% 4% 0 4%;
     }
 
     .galleries-wrapper {
@@ -63,53 +142,40 @@
     }
 
     .galleries-images img {
+        width: 100%;
         min-width: 25rem;
+        max-width: 45rem;
     }
+
 }
 
 /* 500px
 ---------------------------------------------- */
 @media screen and (max-width: 500px) {
-    header,
-    .hero {
-        padding: 0 3%;
-    }
-
     .hero-info {
-        padding-top: 60%;
+        padding-top: 55%;
     }
 
     .hero-bg {
         top: 0;
     }
 
-    /* .about {
-        padding: 7% 10.4% 8.3% 13.9%;
-    }
-
-
-    .testimonial {
-        margin: 0 9%;
-    } 
-
-    .news {
-        padding: 4.9% 9% 13.9% 9%;
-    }
-
-    footer {
-        padding: 0 9% 5.6% 9%;
-    } */
-
     .logo img {
-        width: 4.2rem;
+        width: 3.8rem;
         height: auto;
     }
 
     .header-btn {
-        padding: 0.5em 0.7em;
+        padding: 0.3em 0.4em;
     }
 
     .hero-info-text {
         max-width: 35rem;
     }
+
+    .services-img {
+        display: none;
+    }
 }
+
+
