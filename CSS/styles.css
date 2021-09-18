@@ -149,15 +149,19 @@ p,
 }
 
 .logo p,
-.services-text,
-.testimonial-text {
+.services-text {
     font-size: clamp(1.6rem, 1.3895rem + 0.7018vw, 2.4rem);
     font-weight: 500;
 }
 
 .testimonial-text {
+    font-size: clamp(1.2rem, 0.8842rem + 1.0526vw, 2.4rem);
     line-height: 160%;
     font-weight: 300;
+}
+
+.testimonial-author {
+    font-size: clamp(1.2rem, 1.0947rem + 0.3509vw, 1.6rem);
 }
 
 .btn {
@@ -219,6 +223,10 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.logo img {
+    width: 4.2rem;
 }
 
 .logo p {
@@ -336,7 +344,6 @@ input[type="textarea"] {
 }
 
 .about-img {
-    width: 100%;
     min-width: 27rem;
 }
 
@@ -365,8 +372,6 @@ input[type="textarea"] {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .services-information {
@@ -422,7 +427,6 @@ input[type="textarea"] {
 
 .galleries-images img {
     min-width: 30rem;
-    height: auto;
 }
 
 
@@ -446,13 +450,17 @@ input[type="textarea"] {
     flex-direction: column;
     align-items: center;
     max-width: 84rem;
-    padding: 10rem 0;
+    padding: 8.5% 5%;
     margin: 0 auto;
     text-align: center;
 }
 
 .testimonial-author {
-    padding: 8rem 0 3rem 0;
+    padding: 5em 0 1.9em 0;
+}
+
+.testimonial-avatar {
+    width: 4.9rem;
 }
 
 
@@ -508,7 +516,8 @@ footer.flex-row-spacebtw {
     display: flex;
 }
 
-.address-field img {
+.address-icon {
+    width: auto;
     padding-right: 1rem;
     padding-bottom: 2rem;
 }
@@ -528,5 +537,8 @@ footer.flex-row-spacebtw {
 
 
 
-/* continue mobile - check header, hero and about in 700 and 500 px */
-/* W3S validation, PREFIXES */
+/* continue mobile */
+/*  W3S validation, 
+    PREFIXES,
+    normalizer and reset update
+*/
