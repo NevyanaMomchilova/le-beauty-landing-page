@@ -287,7 +287,18 @@ select {
     background-size: 1rem;
 }
 
-input[type="textarea"] {
+input[type="date"]:in-range::-webkit-datetime-edit-year-field, input[type="date"]:in-range::-webkit-datetime-edit-month-field, input[type="date"]:in-range::-webkit-datetime-edit-day-field, input[type="date"]:in-range::-webkit-datetime-edit-text { 	color: transparent; }
+
+input[name="birthdaydate"]:before {
+    content: attr(placeholder) !important;
+}
+
+input[name="birthdaydate"]:focus:before,
+input[name="birthdaydate"]:valid:before {
+    content: "";
+}
+
+input[name="message"] {
     height: 100%;
     max-height: 14rem;
     padding-bottom: 6.3em;
@@ -544,6 +555,7 @@ footer.flex-row-spacebtw {
 /* continue mobile footer */
 /*  W3S validation, 
     PREFIXES,
+    crossbrowser check,
     normalizer and reset update
     check font-sizes at different screens
     speed loading
