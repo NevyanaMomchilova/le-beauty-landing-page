@@ -350,7 +350,9 @@ select {
     background-size: 1rem;
 }
 
-input[type="date"]:in-range::-webkit-datetime-edit-year-field, input[type="date"]:in-range::-webkit-datetime-edit-month-field, input[type="date"]:in-range::-webkit-datetime-edit-day-field, input[type="date"]:in-range::-webkit-datetime-edit-text { 	color: transparent; }
+input[type="date"]:in-range::-webkit-datetime-edit-year-field, input[type="date"]:in-range::-webkit-datetime-edit-month-field, input[type="date"]:in-range::-webkit-datetime-edit-day-field, input[type="date"]:in-range::-webkit-datetime-edit-text { 	
+    color: transparent; 
+}
 
 input[name="birthdaydate"]:before {
     content: attr(placeholder) !important;
@@ -376,7 +378,7 @@ input[name="message"] {
 .hero-form-date-input::-webkit-inner-spin-button,
 .hero-form-date-input::-webkit-calendar-picker-indicator {
     display: none;
-    -webkit-appearance: none;
+    appearance: none;
 }
 
 .hero-form-btn {
@@ -552,7 +554,6 @@ input[name="message"] {
 
 
 /*
-    PREFIXES,
-    crossbrowser check, clamp???
-    speed loading
+    speed loading,
+    add info about the design
 */
