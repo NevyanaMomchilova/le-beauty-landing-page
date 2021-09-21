@@ -201,10 +201,82 @@ address {
 }
 
 /* 1.5.Layout */
-.flex-row-spacebtw {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero,
+.about {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8%;
+}
+
+.hero-form fieldset,
+.galleries-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleries-images {
+    padding-left: 5.4%;
+    gap: 2rem;
+}
+
+.galleries-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonial-information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 84rem;
+    margin: 0 auto;
+    padding: 8.5% 5%;
+    text-align: center;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 7.63%;
+}
+
+.news-items,
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-items {
+    gap: 2%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -218,25 +290,12 @@ header {
     min-height: 8rem;
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .logo img {
     width: 4.2rem;
 }
 
 .logo p {
     padding-left: 0.85em;
-}
-
-.hero {
-    align-items: flex-start;
-    position: relative;
-    flex-wrap: nowrap;
-    gap: 8%;
 }
 
 .hero-title {
@@ -260,6 +319,10 @@ header {
     border: solid 0.1rem #eeeeee;
     background: #ffffff;
     box-shadow: 0px 30px 60px rgba(0,0,0,0.06);
+}
+
+.hero-form fieldset {
+    border: none;
 }
 
 select,
@@ -304,14 +367,6 @@ input[name="message"] {
     padding-bottom: 6.3em;
 }
 
-.hero-form fieldset {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
 .hero-form-title {
     text-align: center;
     padding-bottom: 0.64em;
@@ -340,13 +395,6 @@ input[name="message"] {
 /* ===========================================
 4.ABOUT
 */
-.about {
-    position: relative;
-    flex-wrap: nowrap;
-    gap: 8%;
-    align-items: flex-start;
-}
-
 .about-img-bg {
     position: absolute;
     top: 0;
@@ -418,23 +466,6 @@ input[name="message"] {
     text-align: right;
 }
 
-.galleries-images {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5.4%;
-    gap: 2rem;
-}
-
-.galleries-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
 .galleries-images img {
     min-width: 30rem;
 }
@@ -454,17 +485,6 @@ input[name="message"] {
     left: 0;
 }
 
-.testimonial-information {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 84rem;
-    padding: 8.5% 5%;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .testimonial-author {
     padding: 5em 0 1.9em 0;
 }
@@ -477,23 +497,9 @@ input[name="message"] {
 /* ===========================================
 8.NEWS
 */
-
-
-.news-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 7.63%;
-}
-
-.news-items {
-    flex-wrap: nowrap;
-    gap: 2%;
-}
-
 .news-item {
-    min-width: 20.5rem;
     position: relative;
+    min-width: 20.5rem;
 }
 
 .news-item-information {
@@ -512,10 +518,6 @@ input[name="message"] {
 /* ===========================================
 9.FOOTER
 */
-footer.flex-row-spacebtw {
-    align-items: flex-start;
-}
-
 .footer-left {
     max-width: 37rem;
 }
@@ -536,9 +538,6 @@ footer.flex-row-spacebtw {
 
 .footer-right {
     max-width: 38.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .footer-quick-link {
@@ -552,11 +551,8 @@ footer.flex-row-spacebtw {
 
 
 
-/* continue mobile footer */
-/*  W3S validation, 
+/*
     PREFIXES,
-    crossbrowser check,
-    normalizer and reset update
-    check font-sizes at different screens
+    crossbrowser check, clamp???
     speed loading
 */

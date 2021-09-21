@@ -1,3 +1,81 @@
+/* ===========================================
+Table of Content:
+    1.RESET
+    2.NORMALIZER
+*/
+
+/* ===========================================
+1.RESET 
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+    /* 62.5% of font-size = 10px if browser font is set to 16px, which makes 1rem = 10px */
+    font-size: 62.5%;
+    line-height: 2.8rem;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+  }
+}
+
+
+
+/* ===========================================
+2.NORMALIZER 
+*/
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -228,4 +306,6 @@ template {
 [hidden] {
     display: none;
 }
+
+
 
