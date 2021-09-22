@@ -6,6 +6,8 @@ Table of Content:
     1.GLOBAL 
         1.1.Body Size, paddings
         1.2.Font Colors
+            - Buttons
+            - Hover Effects
         1.3.Typography
         1.4.Z-Index
         1.5.Layout
@@ -99,6 +101,40 @@ input,
     padding: 1.1em 0em;
     border-radius: 0.28em;
     background-color: #fab91c;
+    cursor: pointer;
+}
+
+/* ------ Hover Effects */
+a:hover,
+.logo p:hover,
+.header-btn:hover,
+.hero-form-btn:hover,
+.news-item:hover {
+    transition: all 0.2s ease-out;
+}
+
+a:hover {
+    color: #0f1c49;
+}
+
+.logo p:hover {
+    color: #fab91c;
+}
+
+.header-btn:hover {
+    color: #ffffff;
+    background-color: #fab91c;
+}
+
+.hero-form-btn:hover {
+    transform: scale(1.03);
+    background-color: #e2a619;
+}
+
+.news-item:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+    box-shadow: 0.3rem 0.3rem 0.7rem #878da4;
 }
 
 /* 1.3.Typography */
@@ -196,7 +232,8 @@ address {
 .services-information,
 .galleries-title,
 .galleries-images,
-.testimonial-information {
+.testimonial-information,
+.about-info {
     z-index: 1;
 }
 
@@ -379,10 +416,6 @@ input[name="message"] {
 .hero-form-date-input::-webkit-calendar-picker-indicator {
     display: none;
     appearance: none;
-}
-
-.hero-form-btn {
-    cursor: pointer;
 }
 
 .hero-bg {
