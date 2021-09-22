@@ -408,8 +408,8 @@ input[name="message"] {
 }
 
 .hero-form-title {
-    text-align: center;
     padding-bottom: 0.64em;
+    margin: 0 auto;
 }
 
 /* remove the default calendar icon from the date type input form field*/
@@ -584,3 +584,6 @@ input[name="message"] {
 .footer-department-title {
     padding-bottom: 2rem;
 }
+
+
+/* FIREFOX issues with clamp and text align for the form */
